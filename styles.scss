@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  height: 100vh;
+  background: hsl(185, 75%, 39%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+}
+.box {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+}
+.bg-container img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.info-container img {
+  position: absolute;
+  top: 37%;
+  left: 46.8%;
+  border: 5px solid white;
+  border-radius: 50%;
+}
+.info-container {
+  text-align: center;
+  padding: 2rem;
+  h2 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 2.5rem;
+  }
+  span {
+    font-weight: 400;
+    color: hsl(0, 0%, 59%);
+    padding: 0.25rem;
+  }
+  p {
+    font-weight: 400;
+    color: hsl(0, 0%, 59%);
+    margin-top: 0.7rem;
+    font-size: 15px;
+  }
+}
+
+.stat {
+  display: flex;
+}
+
+.stat-info {
+  display: flex;
+  flex-direction: column;
+  h1 {
+    font-size: 18px;
+    text-align: center;
+  }
+  p {
+    font-size: 15px;
+    text-align: center;
+    padding: 1.25rem;
+    color: hsl(0, 0%, 59%);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .info-container img {
+    left: 43%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .info-container img {
+    left: 40%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .info-container img {
+    left: 40%;
+  }
+}
